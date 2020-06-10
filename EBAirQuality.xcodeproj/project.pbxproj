@@ -13,6 +13,7 @@
 		6EDA5908248ECF2B00EBE1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA5906248ECF2B00EBE1E9 /* Main.storyboard */; };
 		6EDA590A248ECF3500EBE1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA5909248ECF3500EBE1E9 /* Assets.xcassets */; };
 		6EDA590D248ECF3500EBE1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA590B248ECF3500EBE1E9 /* LaunchScreen.storyboard */; };
+		6EDA5916249075B100EBE1E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDA5915249075B100EBE1E9 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6EDA5909248ECF3500EBE1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EDA590C248ECF3500EBE1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EDA590E248ECF3500EBE1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDA5915249075B100EBE1E9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDA5916249075B100EBE1E9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				6EDA58FF248ECF2B00EBE1E9 /* EBAirQuality */,
 				6EDA58FE248ECF2B00EBE1E9 /* Products */,
+				6EDA5914249075B000EBE1E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				6EDA590E248ECF3500EBE1E9 /* Info.plist */,
 			);
 			path = EBAirQuality;
+			sourceTree = "<group>";
+		};
+		6EDA5914249075B000EBE1E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA5915249075B100EBE1E9 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
