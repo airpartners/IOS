@@ -14,9 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-la-iiM">
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j4b-la-iiM" secondAttribute="bottom" id="72H-Cb-Pay"/>
+                            <constraint firstItem="j4b-la-iiM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ESS-hI-gF9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j4b-la-iiM" secondAttribute="trailing" id="KFc-Qb-k0n"/>
+                            <constraint firstItem="j4b-la-iiM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="q3d-Dn-UkX"/>
+                            <constraint firstItem="j4b-la-iiM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uhS-Qs-u8l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="j4b-la-iiM" id="6Mz-Ij-Jcx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
