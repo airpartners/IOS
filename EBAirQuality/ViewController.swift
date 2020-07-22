@@ -11,20 +11,35 @@ import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate {
     
-    //var webView: WKWebView!
+
+    @IBOutlet weak var logo: UIImageView!
     
     @IBOutlet weak var webView: WKWebView!
     
+
+    func webView(_ webView: WKWebView,
+      didFinish navigation: WKNavigation!) {
+      let scriptSource = """
+                            document.getElementById("webonly").style.display = "none";
+                            document.getElementsByClassName("makeStyles-toolbar-3")[0].style.display = "none";
+                         """
+      webView.evaluateJavaScript(scriptSource)
+      print("loaded")
+    }
+    
+    func getURLString() -> String {
+        let langStr = Locale.preferredLanguages[0]
+        print("The lang is: " + langStr)
+        var url = "https://airpartners-ade.web.app/SN000-045/Home"
+        url += ("/?lang="+langStr)
+        return url
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        let myURL = URL(string: "https://minhkhang1795.github.io/aq-web-client/")!
-        webView.load(URLRequest(url: myURL))
+        webView.navigationDelegate = self
+        let myURL = URL(string: getURLString())
+        webView.load(URLRequest(url: myURL!))
     }
-
-    
-    
 }
 
