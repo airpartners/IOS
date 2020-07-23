@@ -22,26 +22,41 @@
                                 </constraints>
                             </imageView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STC-Zi-h5W">
-                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <rect key="frame" x="0.0" y="161" width="414" height="701"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IL2-wN-c4e" userLabel="LocationButton">
+                                <rect key="frame" x="0.0" y="104" width="414" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Location" backgroundImage="button">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNT-57-NTe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AWc-Eo-58c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Mt-qP-UHU"/>
+                            <constraint firstItem="IL2-wN-c4e" firstAttribute="top" secondItem="AWc-Eo-58c" secondAttribute="bottom" id="5Wk-xH-h0v"/>
+                            <constraint firstItem="IL2-wN-c4e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ih4-SZ-tkx"/>
+                            <constraint firstItem="STC-Zi-h5W" firstAttribute="top" secondItem="IL2-wN-c4e" secondAttribute="bottom" id="MSL-3z-xzX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STC-Zi-h5W" secondAttribute="trailing" id="MSr-lH-UDc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="STC-Zi-h5W" secondAttribute="bottom" id="N3d-YE-PFo"/>
-                            <constraint firstItem="STC-Zi-h5W" firstAttribute="top" secondItem="AWc-Eo-58c" secondAttribute="bottom" id="gtH-cj-YAp"/>
+                            <constraint firstItem="IL2-wN-c4e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wr7-wP-buT"/>
                             <constraint firstItem="AWc-Eo-58c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irj-uS-e0g"/>
                             <constraint firstItem="STC-Zi-h5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ojX-r0-feP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="locationButton" destination="IL2-wN-c4e" id="l4t-46-7Kd"/>
                         <outlet property="logo" destination="AWc-Eo-58c" id="5da-8N-2Kl"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="sb1-ak-GA2"/>
                         <outlet property="webView" destination="STC-Zi-h5W" id="N2I-kh-nQr"/>
@@ -53,6 +68,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button" width="342" height="57"/>
         <image name="logo" width="338" height="116"/>
     </resources>
 </document>
