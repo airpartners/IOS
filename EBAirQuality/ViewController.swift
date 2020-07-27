@@ -65,7 +65,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
       didFinish navigation: WKNavigation!) {
       let scriptSource = """
                             document.getElementById("webonly").style.display = "none";
-                            document.getElementsByClassName("makeStyles-toolbar-3")[0].style.display = "none";
+                            document.getElementsByClassName("jss3")[0].style.display = "none";
                          """
       webView.evaluateJavaScript(scriptSource)
       print("loaded")
@@ -81,6 +81,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationButton.setTitle("St Andrew Road, EB", for: .normal)
         webView.navigationDelegate = self
         setupChooseLocationDropDown()
         // TODO: Write function that gets location based on coordinates of person
