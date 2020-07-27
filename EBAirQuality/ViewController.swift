@@ -22,14 +22,9 @@ class ViewController: UIViewController, WKNavigationDelegate {
     let chooseLocationDropDown = DropDown()
     
     @IBAction func chooseLocation(_ sender: Any) {
-        let result = chooseLocationDropDown.show()
-        print("Can the drop down be displayed? " + String(result.0))
+        chooseLocationDropDown.show()
     }
-    //    @IBAction func chooseLocation(_ sender: AnyObject) {
-//        let result = chooseLocationDropDown.show()
-//        print("Can the drop down be displayed? " + String(result.0))
-//        // how do I make drop down show???
-//    }
+
     
     let locations = ["St Andrew Road, EB": "SN000-045",
     "Everett Street, EB": "SN000-046",
@@ -37,7 +32,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
     "Sumner, EB": "SN000-062",
     "Bay View Ave, Winthrop": "SN000-067",
     "Anna Voy, EB": "SN000-072",
-    "Contact us": "contact-us"]
+    "Contact us": "contact-us",
+    "Privacy Policy": "privacy"]
     
     func setupChooseLocationDropDown() {
         chooseLocationDropDown.anchorView = locationButton
@@ -50,7 +46,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
             "Sumner, EB",
             "Bay View Ave, Winthrop",
             "Anna Voy, EB",
-            "Contact us"
+            "Contact us",
+            "Privacy Policy"
         ]
         
         // Action triggered on selection
@@ -73,7 +70,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     func getURLString(location: String) -> String {
         let langStr = Locale.preferredLanguages[0]
-        print("The lang is: " + langStr)
         var url = "https://airpartners-ade.web.app/" + locations[location]!
         url += ("/?lang="+langStr)
         return url

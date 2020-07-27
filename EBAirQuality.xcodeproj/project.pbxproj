@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		384B0FFFD136188DD0F9400B /* Pods_EBAirQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65721A0DB5E6482459F7EB5B /* Pods_EBAirQuality.framework */; };
 		6E7A706824CF301B009985CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7A706724CF301A009985CC /* LaunchScreen.storyboard */; };
+		6E7A706A24CF6662009985CC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E7A706924CF6662009985CC /* Roboto-Regular.ttf */; };
 		6EDA5901248ECF2B00EBE1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA5900248ECF2B00EBE1E9 /* AppDelegate.swift */; };
 		6EDA5903248ECF2B00EBE1E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA5902248ECF2B00EBE1E9 /* SceneDelegate.swift */; };
 		6EDA5905248ECF2B00EBE1E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA5904248ECF2B00EBE1E9 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		65721A0DB5E6482459F7EB5B /* Pods_EBAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EBAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7A706724CF301A009985CC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		6E7A706924CF6662009985CC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		6EDA58FD248ECF2B00EBE1E9 /* EBAirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EBAirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA5900248ECF2B00EBE1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EDA5902248ECF2B00EBE1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				6EDA5906248ECF2B00EBE1E9 /* Main.storyboard */,
 				6EDA5909248ECF3500EBE1E9 /* Assets.xcassets */,
 				6EDA590E248ECF3500EBE1E9 /* Info.plist */,
+				6E7A706924CF6662009985CC /* Roboto-Regular.ttf */,
 			);
 			path = EBAirQuality;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				6EDA590A248ECF3500EBE1E9 /* Assets.xcassets in Resources */,
 				6E7A706824CF301B009985CC /* LaunchScreen.storyboard in Resources */,
+				6E7A706A24CF6662009985CC /* Roboto-Regular.ttf in Resources */,
 				6EDA5908248ECF2B00EBE1E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
