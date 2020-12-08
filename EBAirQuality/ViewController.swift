@@ -32,6 +32,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     "Sumner, EB": "SN000-062",
     "Bay View Ave, Winthrop": "SN000-067",
     "Anna Voy, EB": "SN000-072",
+    "FAQ": "faq",
     "Contact us": "contact-us",
     "Privacy Policy": "privacy"]
     
@@ -46,6 +47,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             "Sumner, EB",
             "Bay View Ave, Winthrop",
             "Anna Voy, EB",
+            "FAQ",
             "Contact us",
             "Privacy Policy"
         ]
