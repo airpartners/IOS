@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		65721A0DB5E6482459F7EB5B /* Pods_EBAirQuality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EBAirQuality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7A706724CF301A009985CC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		6E7A706924CF6662009985CC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		6E7A706924CF6662009985CC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		6EDA58FD248ECF2B00EBE1E9 /* EBAirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EBAirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA5900248ECF2B00EBE1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EDA5902248ECF2B00EBE1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +63,8 @@
 				6EDA58FD248ECF2B00EBE1E9 /* EBAirQuality.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			path = EBAirQuality/Roboto;
+			sourceTree = SOURCE_ROOT;
 		};
 		6EDA58FF248ECF2B00EBE1E9 /* EBAirQuality */ = {
 			isa = PBXGroup;
