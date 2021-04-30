@@ -34,6 +34,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     "Anna Voy, EB": "SN000-072",
     "FAQ": "faq",
     "Contact us": "contact-us",
+    "Feedback": "feedback",
     "Privacy Policy": "privacy"]
     
     func setupChooseLocationDropDown() {
@@ -49,6 +50,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             "Anna Voy, EB",
             "FAQ",
             "Contact us",
+	     "Feedback",
             "Privacy Policy"
         ]
         
