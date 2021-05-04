@@ -50,8 +50,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
             "Point Shirley, Winthrop",
             "Beachmont, Revere",
             "Contact us",
-	     "Feedback",
-	     "FAQ",
+	    "Feedback",
+	    "FAQ",
             "Privacy Policy"
         ]
         
