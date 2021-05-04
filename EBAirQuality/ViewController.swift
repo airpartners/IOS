@@ -26,15 +26,16 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
 
     
-    let locations = ["St Andrew Road, EB": "SN000-045",
-    "Everett Street, EB": "SN000-046",
-    "Elmer Ave, Winthrop": "SN000-049",
-    "Sumner, EB": "SN000-062",
-    "Bay View Ave, Winthrop": "SN000-067",
-    "Anna Voy, EB": "SN000-072",
-    "FAQ": "faq",
+    let locations = [
+    "Orient Heights, EB": "SN000-045",
+    "Gibson Park, Revere": "SN000-046",
+    "Chelsea Point, Winthrop": "SN000-049",
+    "Jeffries Point, EB": "SN000-062",
+    "Point Shirley, Winthrop": "SN000-067",
+    "Beachmont, Revere": "SN000-114",
     "Contact us": "contact-us",
     "Feedback": "feedback",
+    "FAQ": "faq",
     "Privacy Policy": "privacy"]
     
     func setupChooseLocationDropDown() {
@@ -42,15 +43,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
         chooseLocationDropDown.bottomOffset = CGPoint(x: 0, y: locationButton.bounds.height)
         chooseLocationDropDown.direction = .bottom
         chooseLocationDropDown.dataSource = [
-            "St Andrew Road, EB",
-            "Everett Street, EB",
-            "Elmer Ave, Winthrop",
-            "Sumner, EB",
-            "Bay View Ave, Winthrop",
-            "Anna Voy, EB",
-            "FAQ",
+            "Orient Heights, EB",
+            "Gibson Park, Revere",
+            "Chelsea Point, Winthrop",
+            "Jeffries Point, EB",
+            "Point Shirley, Winthrop",
+            "Beachmont, Revere",
             "Contact us",
 	     "Feedback",
+	     "FAQ",
             "Privacy Policy"
         ]
         
