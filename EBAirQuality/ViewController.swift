@@ -82,11 +82,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationButton.setTitle("St Andrew Road, EB", for: .normal)
+	// TODO: Automatically grab first item in dropdown (see Issue 15)     
+        locationButton.setTitle("Orient Heights, EB", for: .normal)
         webView.navigationDelegate = self
         setupChooseLocationDropDown()
         // TODO: Write function that gets location based on coordinates of person
-        let myURL = URL(string: getURLString(location: "St Andrew Road, EB"))
+        let myURL = URL(string: getURLString(location: "Orient Heights, EB"))
         webView.load(URLRequest(url: myURL!))
     }
 }
